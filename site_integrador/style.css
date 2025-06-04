@@ -8,7 +8,9 @@
 
 body {
     font-family: 'Montserrat', sans-serif;
-    color: white;
+    font-size: medium;
+    color: black;
+    text-align: center;
 }
 
 .banner {
@@ -35,16 +37,18 @@ body {
     color: white;
 }
 
+.logo {
+    background-image: url('./img/logotipo_freya_branco.png');
+    z-index: 100px;
+
+}
+
 .menu a {
     margin-left: 25px;
     text-decoration: none;
     color: white;
     font-weight: 500;
-    font-size: 16px;
-}
-
-.menu i {
-    font-size: 18px;
+    font-size: 20px;
 }
 
 .banner-content {
@@ -54,4 +58,99 @@ body {
     transform: translate(-50%, -50%);
     z-index: 2;
     text-align: center;
+}
+
+.botao-saiba-mais {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 25px;
+    font-weight: bold;
+    color: white;
+    background: #0F3F7E;
+    background: linear-gradient(90deg, rgba(15, 63, 126, 1) 0%, rgba(140, 82, 255, 1) 100%);
+    width: 300px;
+    height: 70px;
+    border-radius: 30px;
+    border:none;
+    margin-top: 600px;
+    right: 10px;
+}
+
+h2 {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.linha-rosa {
+    width: 150px;
+    height: 15px;
+    background-color:#FAA1D4;
+    margin: 0 auto 40px auto;
+    border-radius: 0px;
+}
+
+.produtos {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 40px;
+  flex-wrap: wrap;
+  padding: 0 20px;
+  margin-bottom: 60px;
+  box-sizing: border-box;
+}
+
+.produto {
+  border: 2px solid transparent;
+  padding: 20px;
+  border-radius: 10px;
+  width: 220px;
+  transition: 0.3s;
+  text-align: center;
+  background-color: #fff;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05); 
+}
+
+.produto:hover {
+  border-color: #2b7cff;
+}
+
+.produto img {
+  max-width: 100%;
+  height: 150px;
+  object-fit: contain;
+  margin-bottom: 10px;
+}
+
+.produto h3 {
+  font-size: 18px;
+  margin-bottom: 8px;
+  color: black;
+}
+
+.produto p {
+  font-weight: bold;
+  margin-bottom: 8px;
+  color: #000;
+}
+
+.avaliacao {
+  font-size: 0.9rem;
+  color: #ffb400;
+  margin-bottom: 20px;
+}
+
+.comprar {
+  background: #8C52FF;
+  color: white;
+  border: none;
+  border-radius: 20px;
+  padding: 10px 20px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.segundo-banner img {
+  max-width: 1520px;
+  border-radius: 0px;
 }
