@@ -19,6 +19,7 @@ body {
     background-size: cover;
     background-position: center;
     position: relative;
+    margin-bottom: 100px;
 }
 
 .header {
@@ -35,19 +36,19 @@ body {
     border-bottom: 1px solid rgba(255, 255, 255, 0.2);
     z-index: 999;
     color: white;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05); 
 }
 
-.logo {
-    background-image: url('./img/logotipo_freya_branco.png');
-    z-index: 100px;
-
+.search-barra {
+  width: 20px;
+  height: 20px;
 }
 
 .menu a {
     margin-left: 25px;
     text-decoration: none;
     color: white;
-    font-weight: 500;
+    font-family: 'Montserrat', sans-serif;
     font-size: 20px;
 }
 
@@ -70,8 +71,8 @@ body {
     width: 300px;
     height: 70px;
     border-radius: 30px;
-    border:none;
-    margin-top: 600px;
+    border: none;
+    margin-top: 800px;
     right: 10px;
 }
 
@@ -147,10 +148,139 @@ h2 {
   border-radius: 20px;
   padding: 10px 20px;
   font-weight: bold;
+  font-family: 'Montserrat', sans-serif;
   cursor: pointer;
 }
 
 .segundo-banner img {
-  max-width: 1520px;
+  max-width: 100%;
   border-radius: 0px;
+  margin-bottom: 100px;
+}
+
+.secao-newsletter {
+  background: #0c2e5a;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 80vh;
+  padding: 0 60px;
+  gap: 80px;
+  margin-bottom: 100px;
+}
+
+.newsletter-texto {
+  max-width: 400px;
+}
+
+.newsletter-texto h1 {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 36px;
+  color: white;
+  margin-bottom: 20px;
+}
+
+.newsletter-texto p {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 18px;
+  color: white;
+  text-align: left;
+  line-height: 1.6;
+}
+
+.newsletter-form {
+  background: linear-gradient(to bottom, #1f2d83, #5e3cb2);
+  border-radius: 20px;
+  padding: 40px 30px;
+  width: 300px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+  color: white;
+}
+
+.newsletter-form .logo {
+  display: block;
+  margin: 0 auto 30px;
+  width: 100px;
+}
+
+.newsletter-form form {
+  display: flex;
+  flex-direction: column;
+}
+
+.newsletter-form label {
+  font-size: 14px;
+  margin-top: 20px;
+}
+
+.newsletter-form input {
+  background: transparent;
+  border: none;
+  border-bottom: 1px solid white;
+  padding: 8px 4px;
+  color: white;
+  font-size: 14px;
+  outline: none;
+}
+
+.newsletter-form button {
+  margin-top: 30px;
+  padding: 12px;
+  border: 1px solid white;
+  background: transparent;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+  border-radius: 8px;
+  transition: background 0.3s ease;
+}
+
+.newsletter-form button:hover {
+  background: rgba(255, 255, 255, 0.2);
+}
+
+.cards-categorias {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 40px;
+  flex-wrap: nowrap;
+  overflow-x: auto;
+  padding: 0 20px;
+}
+
+.categoria {
+  flex: 0 0 auto;
+  text-align: center;
+  flex-shrink: 0;
+}
+
+.categoria img {
+  width: 200px;
+  height: 250px;
+  object-fit: cover;
+  border-radius: 16px;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease;
+}
+
+.categoria img:hover {
+  transform: scale(1.05);
+}
+
+.categoria p {
+  font-weight: bold;
+  margin-top: 16px;
+  font-size: 16px;
+}
+
+footer {
+  background: linear-gradient(white, #8C52FF);
+  height: 600px;
+}
+
+footer p {
+  color: white;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 20px;
 }
