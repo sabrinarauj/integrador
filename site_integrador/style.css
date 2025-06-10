@@ -25,6 +25,7 @@ body {
 .header {
     position: fixed;
     top: 0;
+    height: 12%;
     width: 100%;
     display: flex;
     justify-content: space-between;
@@ -235,7 +236,7 @@ h2 {
   font-weight: bold;
   cursor: pointer;
   border-radius: 8px;
-  transition: background 0.3s ease;
+  transition: 0.3s ease;
 }
 
 .newsletter-form button:hover {
@@ -299,6 +300,7 @@ h2 {
   position: relative;
   z-index: 10;
   margin-bottom: 100px;
+  
 }
 
 .conteiner {
@@ -400,3 +402,25 @@ h2 {
 #produto:hover {
   border-color: #2b7cff;
 }
+
+/* Favoritos */
+
+#favoritos {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+#favoritos p {
+  margin-bottom: 30px;
+  font-size: medium;
+  font-weight: lighter;
+}
+
+/* Login */
+
+.body-login {
+  background: #0c2e5a;
+}
+
+
