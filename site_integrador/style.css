@@ -23,7 +23,7 @@ body {
 }
 
 .header {
-    position: fixed;
+    position: absolute;
     top: 0;
     height: 12%;
     width: 100%;
@@ -31,13 +31,12 @@ body {
     justify-content: space-between;
     align-items: center;
     padding: 30px 60px;
-    background-color: rgba(255, 255, 255, 0.1);
+    background-color: rgba(12, 46, 90, 0.14);
     backdrop-filter: blur(10px);
     -webkit-backdrop-filter: blur(10px);
     border-bottom: 1px solid rgba(255, 255, 255, 0.2);
     z-index: 999;
-    color: white;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05); 
+    box-shadow: 0 2px 5px rgba(0, 0, 8, 0.05); 
 }
 
 .search-barra {
@@ -45,10 +44,19 @@ body {
   height: 20px;
 }
 
+.menu i{
+  color: white;
+  width: 20px;
+  height: 20px;
+}
+
+.menu img {
+  width: 200px;
+  height: 100px;
+}
 .menu a {
     margin-left: 25px;
     text-decoration: none;
-    color: white;
     font-family: 'Montserrat', sans-serif;
     font-size: 20px;
 }
@@ -196,7 +204,7 @@ h2 {
   background: linear-gradient(to bottom, #1f2d83, #5e3cb2);
   border-radius: 20px;
   padding: 40px 30px;
-  width: 300px;
+  width: 400px;
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
   color: white;
 }
@@ -215,6 +223,7 @@ h2 {
 .newsletter-form label {
   font-size: 14px;
   margin-top: 20px;
+  align-items: flex-start;
 }
 
 .newsletter-form input {
@@ -225,6 +234,7 @@ h2 {
   color: white;
   font-size: 14px;
   outline: none;
+  margin-bottom: 20px;
 }
 
 .newsletter-form button {
@@ -293,14 +303,13 @@ h2 {
 
 /* Página de Produtos */
 
-.navbar {
-  background-color: #ffff;
+.navbar-produtos {
+  background-color: #ffffff;
   box-shadow: 0 0 10px #8C52FF;
   padding: 1rem 0;
   position: relative;
   z-index: 10;
   margin-bottom: 100px;
-  
 }
 
 .conteiner {
@@ -316,7 +325,6 @@ h2 {
 
 .logotipo img {
   height: 60px;
-  
 }
 
 .search {
@@ -417,7 +425,7 @@ h2 {
   font-weight: lighter;
 }
 
-/* Login */
+/* Login*/
 
 .body-login {
   display: flex;
@@ -431,7 +439,7 @@ h2 {
   padding: 0;
 }
 
-.login-conteiner {
+.formulario-login {
   background: linear-gradient(180deg, #0c2e5a 0%, #6e42c1 100%);
   border-radius: 20px;
   margin-top: 100px;
@@ -441,14 +449,14 @@ h2 {
 }
 
 
-.login-conteiner img {
+.formulario-login img {
   height: 135px;
   width: 250;
   margin-bottom: 50px;
   text-align: center;
 }
 
-.login-conteiner input {
+.formulario-login input {
   width: 100%;
   padding: 12px;
   margin: 10px 0;
@@ -462,7 +470,7 @@ input::placeholder {
   font-size: 14px;
 }
 
-.login-conteiner button {
+.formulario-login button {
   width: 400px;
   height: 50px;
   margin-top: 30px;
@@ -477,7 +485,7 @@ input::placeholder {
   transition: 0.3s ease;
 }
 
-.login-conteiner button:hover{
+.formulario-login button:hover{
   background: rgba(255, 255, 255, 0.2);
 }
 
@@ -505,3 +513,414 @@ input::placeholder {
   margin-top: 10px;
 }
 
+/* Cadastro */
+.body-contato {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+  height: 100vh;
+  background: #0c2e5a;
+  font-family: 'Montserrat', sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.formulario-contato {
+  background: linear-gradient(180deg, #0c2e5a 0%, #6e42c1 100%);
+  border-radius: 20px;
+  margin-top: 100px;
+  padding: 40px 30px;
+  width: 480px;
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.3);
+}
+
+
+.formulario-contato img {
+  height: 135px;
+  width: 250;
+  margin-bottom: 50px;
+  text-align: center;
+}
+
+.formulario-contato input {
+  width: 100%;
+  padding: 12px;
+  margin: 10px 0;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+}
+
+input::placeholder {
+  color: #888;
+  font-size: 14px;
+}
+
+.formulario-contato button {
+  width: 400px;
+  height: 50px;
+  margin-top: 30px;
+  padding: 12px;
+  border: 1px solid white;
+  background: transparent;
+  color: white;
+  font-size: medium;
+  font-weight: bold;
+  cursor: pointer;
+  border-radius: 8px;
+  transition: 0.3s ease;
+}
+
+.formulario-contato button:hover{
+  background: rgba(255, 255, 255, 0.2);
+}
+
+.form-grupo {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-bottom: 20px;
+  width: 100%;
+}
+
+.form-grupo label {
+  color: white;
+  font-size: 16px;
+  margin-bottom: 8px;
+  font-weight: 500;
+}
+
+.forgot-password {
+  display: block;
+  width: 100%;
+  text-align: center;
+  font-size: 12px;
+  color: #d2d2d2;
+  margin-top: 10px;
+}
+
+/* Contato */
+.body-contato {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+  height: 100vh;
+  background: #0c2e5a;
+  font-family: 'Montserrat', sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.body-contato .formulario-contato {
+  margin-top: 200px;
+}
+
+.formulario-contato {
+  background: linear-gradient(180deg, #0c2e5a 0%, #6e42c1 100%);
+  border-radius: 20px;
+  margin-top: 100px;
+  padding: 40px 30px;
+  width: 480px;
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.3);
+}
+
+.formulario-contato h2 {
+  margin-top: 20px;
+  margin-bottom: 60px;
+  color:white;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.formulario-contato input {
+  width: 100%;
+  padding: 12px;
+  margin: 10px 0;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+}
+
+input::placeholder {
+  color: #888;
+  font-size: 14px;
+}
+
+.formulario-contato button {
+  width: 400px;
+  height: 50px;
+  margin-top: 30px;
+  padding: 12px;
+  border: 1px solid white;
+  background: transparent;
+  color: white;
+  font-size: medium;
+  font-weight: bold;
+  cursor: pointer;
+  border-radius: 8px;
+  transition: 0.3s ease;
+}
+
+.formulario-contato button:hover{
+  background: rgba(255, 255, 255, 0.2);
+}
+
+.form-grupo {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-bottom: 20px;
+  width: 100%;
+}
+
+.form-grupo label {
+  color: white;
+  font-size: 16px;
+  margin-bottom: 8px;
+  font-weight: 500;
+}
+
+.forgot-password {
+  display: block;
+  width: 100%;
+  text-align: center;
+  font-size: 12px;
+  color: #d2d2d2;
+  margin-top: 10px;
+}
+
+/* Campo de mensagem do contato */
+.input-mensagem {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-bottom: 20px;
+  width: 100%;
+}
+
+.input-mensagem label {
+  color: white;
+  font-size: 16px;
+  margin-bottom: 10px;
+  font-weight: 500;
+}
+
+.input-mensagem textarea{
+  width: 100%;
+  height: 200px;
+  padding: 8px 16px 8px 16px;
+  border-radius: 8px;
+  font-size: 16px;
+  line-height: 1.4;
+}
+
+.input-mensagem textarea::placeholder {
+  color: #888;
+  font-size: 14px;
+  font-family: 'Monteserrat', sans-serif;
+}
+
+/* Carrinho */
+
+.navbar-carrinho {
+  background-color: #ffffff;
+  box-shadow: 0 0 10px #8C52FF;
+  padding: 1rem 0;
+  position: relative;
+  z-index: 10;
+  margin-bottom: 100px;
+}
+
+.pagina-produtos {
+  max-width: 1000px;
+  margin: 50px auto;
+  background: #ffffff;
+  padding: 40px;
+  border-radius: 20px;
+}
+
+.pagina-produtos h2 {
+  text-align: center;
+  font-weight: 800;
+  font-size: 28px;
+}
+
+.pagina-produtos p {
+  text-align: center;
+  margin-bottom: 30px;
+  font-size: 16px;
+  color: #333;
+}
+
+.itens-carrinho .item {
+  display: grid;
+  grid-template-columns: 150px 1fr 150px 100px 40px;
+  align-items: center;
+  gap: 20px;
+  border-bottom: 1px solid #f0f0f0;
+  padding-bottom: 20px;
+  margin-bottom: 20px;
+}
+
+.item img {
+  width: 150px;
+  border-radius: 10px;
+}
+
+.item .detalhes {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.item .detalhes h4 {
+  font-size: 18px;
+  font-weight: 700;
+  margin: 0;
+}
+
+.item .detalhes p {
+  color: black;
+  font-size: 14px;
+  margin-top: 4px;
+  margin: 2px 0 0 0;
+}
+
+.item .quantidade {
+  display: flex;
+  align-items: center;
+}
+
+.item .quantidade button {
+  border: none;
+  background: #eee;
+  padding: 6px 10px;
+  cursor: pointer;
+  border-radius: 6px;
+  font-size: 16px;
+  transition: background 0.3s;
+}
+
+.item .quantidade button:hover {
+  background-color: #ddd;
+}
+
+.item .quantidade span {
+  margin: 0 6px;
+  min-width: 20px;
+  text-align: center;
+}
+
+.item .preco {
+ font-weight: 600;
+ text-align: left;
+}
+
+.excluir {
+  cursor: pointer;
+  color: black;
+}
+
+.sumario {
+  padding: 30px;
+  border-radius: 20px;
+  margin-top: 40px;
+  text-align: center;
+}
+
+.sumario h3 {
+  margin-bottom: 20px;
+  font-weight: 700;
+}
+
+.sumario p {
+  margin: 5px 0;
+  font-size: 16px;
+}
+
+.sumario span {
+  font-weight: bold;
+}
+
+.cupom {
+  margin: 20px 0;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: medium;
+}
+
+.cupom input {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  width: 20%;
+}
+
+.cupom .aplicar {
+  padding: 10px 20px;
+  background-color: #8C52FF;
+  color: white;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: bold;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  margin-left: 10px;
+}
+
+.finalizar {
+  margin-top: 10px;
+  background-color: #8C52FF;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  padding: 12px 40px;
+  cursor: pointer;
+  font-weight: bold;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.footer {
+  background: linear-gradient(to top, #8C52FF, #ffffff);
+  padding: 40px;
+  margin-top: 60px;
+  border-radius: 20px 20px 0 0;
+}
+
+.footer-conteudo {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: wrap;
+}
+
+.footer .info p {
+  margin: 4px 0;
+  color: #333;
+}
+
+.footer .social i {
+  font-size: 24px;
+  margin-right: 10px;
+  cursor: pointer;
+}
+
+.footer .links {
+  display: flex;
+  flex-direction: column;
+}
+
+.footer .links a {
+  text-decoration: none;
+  color: #333;
+  margin: 4px 0;
+}
+
+.footer .copyright {
+  text-align: center;
+  margin-top: 20px;
+  color: #555;
+}

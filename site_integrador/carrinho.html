@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carrinho</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+</head>
+
+<body>
+    <header class="navbar-carrinho">
+        <div class="conteiner">
+            <div class="logotipo">
+                <img src="./img/logofreya_freya_preto.png" />
+            </div>
+            <div class="search">
+                <input type="text" placeholder="Buscar" />
+                <button><i class="fas fa-search"></i></button>
+            </div>
+            <nav class="menu">
+                <a href="produtos.html">Produtos</a>
+                <a href="#">Sobre</a>
+                <a href="#">Contato</a>
+                <i class="fa-regular fa-user"></i>
+                <i class="fa-regular fa-heart"></i>
+                <i class="fa-regular fa-cart-shopping"></i>
+            </nav>
+        </div>
+    </header>
+
+    <main class="carrinho">
+        <section class="pagina-produtos">
+            <h2>CARRINHO</h2>
+            <div class="linha-rosa"></div>
+            <p>3 itens</p>
+
+            <div class="itens-carrinho">
+                <div class="item">
+                    <img src="./img/saia-ballet.jpg" alt="Saia para Ballet">
+                    <div class="detalhes">
+                        <h4>Saia para Ballet</h4>
+                        <p>Cor: Vinho</p>
+                    </div>
+                    <div class="quantidade">
+                        <button>-</button>
+                        <span>1</span>
+                        <button>+</button>
+                    </div>
+                    <div class="preco">R$89,90</div>
+                    <i class="fa-solid fa-trash excluir"></i>
+                </div>
+            </div>
+
+            <div class="itens-carrinho">
+                <div class="item">
+                    <img src="./img/saia-ballet.jpg" alt="Saia para Ballet">
+                    <div class="detalhes">
+                        <h4>Saia para Ballet</h4>
+                        <p>Cor: Vinho</p>
+                    </div>
+                    <div class="quantidade">
+                        <button>-</button>
+                        <span>1</span>
+                        <button>+</button>
+                    </div>
+                    <div class="preco">R$89,90</div>
+                    <i class="fa-solid fa-trash excluir"></i>
+                </div>
+            </div>
+
+            <div class="itens-carrinho">
+                <div class="item">
+                    <img src="./img/saia-ballet.jpg" alt="Saia para Ballet">
+                    <div class="detalhes">
+                        <h4>Saia para Ballet</h4>
+                        <p>Cor: Vinho</p>
+                    </div>
+                    <div class="quantidade">
+                        <button>-</button>
+                        <span>1</span>
+                        <button>+</button>
+                    </div>
+                    <div class="preco">R$89,90</div>
+                    <i class="fa-solid fa-trash excluir"></i>
+                </div>
+            </div>
+
+            <div class="sumario">
+                <h2>SUMÁRIO</h2>
+                <div class="linha-rosa"></div>
+                <p>Subtotal: <span>R$500,00</span></p>
+                <p>Frete: <span>R$00,00</span></p>
+            </div>
+
+            <div class="cupom">
+                <label for="cupom">CUPOM:</label>
+                <input type="text" id="cupom" placeholder="Digite seu cupom"/>
+                <button class="aplicar">APLICAR</button>
+            </div>
+
+            <button class="finalizar">FINALIZAR</button>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="footer-conteudo">
+            <div class="info">
+                <p>Rua Exemplo, 123 - Campinas - SP</p>
+                <p>contato@freya.com</p>
+                <p>(19) 99999-9999</p>
+            </div>
+            <div class="social">
+                <i class="fa-brands fa-instagram"></i>
+                <i class="fa-brands fa-whatsapp"></i>
+                <i class="fa-brands fa-facebook"></i>
+            </div>
+            <div class="links">
+                <a href="#">Home</a>
+                <a href="#">Produtos</a>
+                <a href="#">Sobre</a>
+                <a href="#">Contato</a>
+                <a href="#">Cadastro</a>
+            </div>
+        </div>
+        <p class="copyright">&copy; 2025 Freya Dance Company - Todos os direitos reservados</p>
+    </footer>
+
+</body>
+</html>
