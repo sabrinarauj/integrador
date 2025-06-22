@@ -1,17 +1,17 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="wclassth=device-wclassth, initial-scale=1.0">
-    <title>Perfil</title>
+    <title>Pagamento</title>
     <link rel="stylesheet" href="style.css" />
     <link rel="shortcut icon" type="image/png" href="./img/logofreya_freya_preto.png">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
 </head>
-
 <body>
+
+    <!--Página de Pagamento-->
      <header class="navbar-carrinho">
         <div class="conteiner">
             <div class="logotipo">
@@ -32,55 +32,36 @@
         </div>
     </header>
 
-    <div class="conteiner-perfil">
-        <aside class="side-bar">
-            <div class="perfil">
-                <img src="./img/hello-kitty-office.jpg" alt="foto de perfil" />
-                <p>Olá, Sabrina!</p>
-            </div>
-            <nav class="menu-perfil">
-                <button>Minha Conta</button>
-                <button>Meus Pedidos</button>
-                <button>Endereços</button>
-                <button class="sair">Sair</button>
-            </nav>
-        </aside>
+     <main>
+        <section class="pagina-produtos">
+            <h2>PAGAMENTO</h2>
+            <div class="linha-rosa"></div>
+        </section>
+    
+        <div class="pagamento">
 
-        <main class="dados-pessoais">
-            <h3>Dados Pessoais</h3>
-            <hr>
+            <div class="forma-pagamento">
+                <div class="card-pagamento">
+                    <p>Cartão de Débito <i class="bi bi-credit-card"></i></p>
+                </div>
 
-            <div class="info-pessoais">
-                <div class="campo">
-                    <label>Nome:</label>
-                    <input type="text" value="Sabrina" readonly>
-                    <i class="bi bi-pencil-square"></i>
+                <div class="card-pagamento">
+                    <p>Cartão de Crédito <i class="bi bi-credit-card"></i></p>
                 </div>
-                <div class="campo">
-                    <label>Sobrenome:</label>
-                    <input type="text" value="Teixeira" readonly>
-                    <i class="bi bi-pencil-square"></i>
+                
+                <div class="card-pagamento">
+                   <p>Boleto Bancário <i class="bi bi-qr-code"></i></i></p>
                 </div>
-                <div class="campo">
-                    <label>E-mail:</label>
-                    <input type="text" value="sabr***@gmail.com" readonly>
-                    <i class="bi bi-pencil-square"></i>
-                </div>
-                <div class="campo">
-                    <label>Telefone:</label>
-                    <input type="text" value="(00) 00000-0000" readonly>
-                    <i class="bi bi-pencil-square"></i>
-                </div>
-                <div class="campo">
-                    <label>Pagamento:</label>
-                    <input type="text" value="Cartão de Débito" readonly>
-                    <i class="bi bi-pencil-square"></i>
+
+                <div class="card-pagamento">
+                    <p>PIX <i class="fa-brands fa-pix"></i></p>
                 </div>
             </div>
-        </main>
-    </div>
+        </div>
+        <button class="continuar">CONTINUAR</button>
+     </main>
 
-    <footer class="rodape">
+      <footer class="rodape">
         <div class="rodape-conteudo">
 
             <div class="rodape-info">
@@ -113,5 +94,4 @@
     </footer>
 
 </body>
-
 </html>

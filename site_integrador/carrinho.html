@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Carrinho</title>
     <link rel="stylesheet" href="style.css" />
+    <link rel="shortcut icon" type="image/png" href="./img/logofreya_freya_preto.png">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
 </head>
 
@@ -21,11 +23,11 @@
             </div>
             <nav class="menu">
                 <a href="produtos.html">Produtos</a>
-                <a href="#">Sobre</a>
-                <a href="#">Contato</a>
-                <i class="fa-regular fa-user"></i>
-                <i class="fa-regular fa-heart"></i>
-                <i class="fa-regular fa-cart-shopping"></i>
+                <a href="sobre.html">Sobre</a>
+                <a href="contato.html">Contato</a>
+                <a href="login.html"><i class="fa-regular fa-user" style="color: #000000;"></i></a>
+                <a href="favoritos.html"><i class="fa-regular fa-heart" style="color: #000000;"></i></a>
+                <a href="carrinho.html"><i class="fa-solid fa-cart-shopping" style="color: #000000;"></i></a>
             </nav>
         </div>
     </header>
@@ -96,36 +98,45 @@
 
             <div class="cupom">
                 <label for="cupom">CUPOM:</label>
-                <input type="text" id="cupom" placeholder="Digite seu cupom"/>
+                <input type="text" id="cupom" placeholder="Digite seu cupom" />
                 <button class="aplicar">APLICAR</button>
             </div>
 
             <button class="finalizar">FINALIZAR</button>
         </section>
     </main>
+    <footer class="rodape">
+        <div class="rodape-conteudo">
 
-    <footer class="footer">
-        <div class="footer-conteudo">
-            <div class="info">
-                <p>Rua Exemplo, 123 - Campinas - SP</p>
-                <p>contato@freya.com</p>
-                <p>(19) 99999-9999</p>
+            <div class="rodape-info">
+                <p>Rua Pastor Cícero Canuto de Lima, 71 <br> São Bernardo
+                    - Campinas, SP</p>
+                <p>3772-1840</p>
+                <div class="redes-sociais">
+                    <p>Redes Sociais</p>
+                    <div class="icones">
+                        <a href="https://web.whatsapp.com/"><i class="bi bi-whatsapp"></i></a>
+                        <a href="https://www.instagram.com/"><i class="bi bi-instagram"></i></a>
+                        <a href="https://x.com/"><i class="bi bi-twitter-x"></i></a>
+                        <a href="https://www.facebook.com/?locale=pt_BR"><i class="bi bi-facebook"></i></a>
+                    </div>
+                </div>
             </div>
-            <div class="social">
-                <i class="fa-brands fa-instagram"></i>
-                <i class="fa-brands fa-whatsapp"></i>
-                <i class="fa-brands fa-facebook"></i>
-            </div>
-            <div class="links">
-                <a href="#">Home</a>
-                <a href="#">Produtos</a>
-                <a href="#">Sobre</a>
-                <a href="#">Contato</a>
-                <a href="#">Cadastro</a>
+
+            <div class="rodape-menu">
+                <a href="index.html">Home</a>
+                <a href="produtos.html">Produtos</a>
+                <a href="sobre.html">Sobre</a>
+                <a href="contato.html">Contato</a>
+                <a href="login.html">Login</a>
+                <a href="cadastro.html">Cadastro</a>
             </div>
         </div>
-        <p class="copyright">&copy; 2025 Freya Dance Company - Todos os direitos reservados</p>
+        <div class="rodape-direitos">
+            <p>&copy SENAI Roberto Mange 2025 - Todos os direitos reservados.</p>
+        </div>
     </footer>
 
 </body>
+
 </html>

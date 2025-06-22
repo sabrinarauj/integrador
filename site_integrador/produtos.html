@@ -3,14 +3,16 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="wclassth=device-wclassth, initial-scale=1.0">
     <title>Produtos</title>
     <link rel="stylesheet" href="style.css" />
+    <link rel="shortcut icon" type="image/png" href="./img/logofreya_freya_preto.png">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"/>
 </head>
 
 <body>
-    <header class="navbar-produtos">
+   <header class="navbar-carrinho">
         <div class="conteiner">
             <div class="logotipo">
                 <img src="./img/logofreya_freya_preto.png" />
@@ -20,12 +22,12 @@
                 <button><i class="fas fa-search"></i></button>
             </div>
             <nav class="menu">
-                <a href="#">Produtos</a>
-                <a href="#">Sobre</a>
-                <a href="#">Contato</a>
-                <i class="fa-regular fa-user"></i>
-                <i class="fa-regular fa-heart"></i>
-                <i class="fa-regular fa-cart-shopping"></i>
+                <a href="produtos.html">Produtos</a>
+                <a href="sobre.html">Sobre</a>
+                <a href="contato.html">Contato</a>
+                <a href="login.html"><i class="fa-regular fa-user" style="color: #000000;"></i></a>
+                <a href="favoritos.html"><i class="fa-regular fa-heart" style="color: #000000;"></i></a>
+                <a href="carrinho.html"><i class="fa-solid fa-cart-shopping" style="color: #000000;"></i></a>
             </nav>
         </div>
     </header>
@@ -34,207 +36,232 @@
         <section class="pagina-produtos">
             <h2>TODOS OS PRODUTOS</h2>
             <div class="linha-rosa"></div>
-            <p>20 itens</p>
+            <p>21 itens</p>
 
-            <div id="produtos">
-            <div id="produto">
+            <div class="produtos">
+            <div class="produto">
                 <img src="./img/salto1_produtos.jpg" alt="Salto de Pole Dance">
                 <h3>Salto de Pole</h3>
                 <p>R$169,90</p>
-                <div class="avaliacao">icone</div>
                 <button class="comprar" type="submit">COMPRAR</button>
             </div>
 
-            <div id="produtos">
-            <div id="produto">
+            <div class="produtos">
+            <div class="produto">
                 <img src="./img/blusa-ballet.jpg" alt="Blusa de manga comprida para dança">
                 <h3>Blusa Collant</h3>
                 <p>R$99,90</p>
-                <div class="avaliacao">icone</div>
                 <button class="comprar" type="submit">COMPRAR</button>
             </div>
 
-            <div id="produtos">
-            <div id="produto">
+            <div class="produtos">
+            <div class="produto">
                 <img src="./img/saia-ballet.jpg" alt="Saia para Ballet">
+                <h3>Saia - Ballet</h3>
+                <p>R$69,90</p>
+                <button class="comprar" type="submit">COMPRAR</button>
+            </div>
+        </section>
+    </main>
+
+    <main>
+        <section class="pagina-produtos">
+            <div class="produtos">
+            <div class="produto">
+                <img src="./img/barra-pole.png" alt="barra de pole dance">
+                <h3>Barra de Pole</h3>
+                <p>R$1.399,99</p>
+                <button class="comprar" type="submit">COMPRAR</button>
+            </div>
+
+            <div class="produtos">
+            <div class="produto">
+                <img src="./img/cinto-belly-dance.jpg" alt="cinto para dança do ventre">
+                <h3>Cinto Belly Dance</h3>
+                <p>R$59,90</p>
+                <button class="comprar" type="submit">COMPRAR</button>
+            </div>
+
+            <div class="produtos">
+            <div class="produto">
+                <img src="./img/joelheira.jpg" alt="joelheira para treino">
+                <h3>Joelheira de treino</h3>
+                <p>R$35,90</p>
+                <button class="comprar" type="submit">COMPRAR</button>
+            </div>
+        </section>
+    </main>
+
+    <main>
+        <section class="pagina-produtos">
+            <div class="produtos">
+            <div class="produto">
+                <img src="./img/blusa-ballet-bege.jpg" alt="blusa manga longa">
+                <h3>Blusa Ballet</h3>
+                <p>R$89,90</p>
+                <button class="comprar" type="submit">COMPRAR</button>
+            </div>
+
+            <div class="produtos">
+            <div class="produto">
+                <img src="./img/collant-rosa.jpg" alt="collant de ballet rosa">
+                <h3>Collant Ballet</h3>
+                <p>R$89,90</p>
+                <button class="comprar" type="submit">COMPRAR</button>
+            </div>
+
+            <div class="produtos">
+            <div class="produto">
+                <img src="./img/calca-sino.jpg" alt="calça flare">
+                <h3>Calça Flare</h3>
+                <p>R$99,99</p>
+                <button class="comprar" type="submit">COMPRAR</button>
+            </div>
+        </section>
+    </main>
+
+    <main>
+        <section class="pagina-produtos">
+            <div class="produtos">
+            <div class="produto">
+                <img src="./img/top-belly.jpg" alt="cropped dança do ventre">
                 <h3>Saia para Ballet</h3>
                 <p>R$69,90</p>
-                <div class="avaliacao">icone</div>
                 <button class="comprar" type="submit">COMPRAR</button>
             </div>
 
-            <div id="produtos">
-            <div id="produto">
-                <img src="./img/sapatilha-ballet.jpg" alt="Sapatilha de ponta">
-                <h3>Sapatilha - Ponta</h3>
-                <p>R$399,90</p>
-                <div class="avaliacao">icone</div>
+            <div class="produtos">
+            <div class="produto">
+                <img src="./img/macaquinho.jpg" alt="macacão para treino">
+                <h3>Macacão de treino</h3>
+                <p>R$89,90</p>
                 <button class="comprar" type="submit">COMPRAR</button>
             </div>
 
-            <div id="produtos">
-            <div id="produto">
-                <img src="./img/top-belly-dance.jpg" alt="Top para Belly Dance">
-                <h3>Top Belly Dance</h3>
-                <p>R$209,99</p>
-                <div class="avaliacao">icone</div>
+            <div class="produtos">
+            <div class="produto">
+                <img src="./img/saia-belly-dance.jpg" alt="saia de dança do ventre">
+                <h3>Saia Belly</h3>
+                <p>R$69,90</p>
                 <button class="comprar" type="submit">COMPRAR</button>
             </div>
         </section>
-    </main>
+        </main>
 
-    <main>
-        <section class="pagina-produtos">
-            <div id="produtos">
-            <div id="produto">
-                <img src="./img/joelheira.jpg" alt="Joelheira para treino">
-                <h3>Joelheira</h3>
-                <p>R$55,90</p>
-                <div class="avaliacao">icone</div>
+        <main>
+            <section class="pagina-produtos">
+            <div class="produtos">
+            <div class="produto">
+                <img src="./img/conjunto-treino.jpg" alt="conjunto de treino">
+                <h3>Conjunto - treino</h3>
+                <p>R$130,90</p>
                 <button class="comprar" type="submit">COMPRAR</button>
             </div>
 
-            <div id="produtos">
-            <div id="produto">
-                <img src="./img/conjunto.jpg" alt="Conjunto de roupa">
-                <h3>Conjunto - Dança</h3>
-                <p>R$159,90</p>
-                <div class="avaliacao">icone</div>
+            <div class="produtos">
+            <div class="produto">
+                <img src="./img/cropped-collant.jpg" alt="cropped collant">
+                <h3>Cropped Collant</h3>
+                <p>R$79,90</p>
                 <button class="comprar" type="submit">COMPRAR</button>
             </div>
 
-            <div id="produtos">
-            <div id="produto">
-                <img src="./img/saia-belly-dance.jpg" alt="Saia de dança do ventre">
-                <h3>Saia Belly Dance</h3>
-                <p>R$179,90</p>
-                <div class="avaliacao">icone</div>
-                <button class="comprar" type="submit">COMPRAR</button>
-            </div>
-
-            <div id="produtos">
-            <div id="produto">
-                <img src="./img/collant_produtos.jpg" alt="Collant de dança">
-                <h3>Collant - Ballet</h3>
-                <p>R$169,90</p>
-                <div class="avaliacao">icone</div>
-                <button class="comprar" type="submit">COMPRAR</button>
-            </div>
-
-            
-            <div id="produtos">
-            <div id="produto">
-                <img src="./img/salto-rosa.jpg" alt="Salto de Pole Dance rosa">
-                <h3>Salto de Pole</h3>
-                <p>R$189,90</p>
-                <div class="avaliacao">icone</div>
-                <button class="comprar" type="submit">COMPRAR</button>
-            </div>
-        </section>
-    </main>
-
-    <main>
-        <section class="pagina-produtos">
-            <div id="produtos">
-            <div id="produto">
-                <img src="./img/top-belly.jpg" alt="Top de dança do ventre">
+            <div class="produtos">
+            <div class="produto">
+                <img src="./img/top-belly-dance.jpg" alt="cropped de dança do ventre">
                 <h3>Top Belly</h3>
-                <p>R$145,90</p>
-                <div class="avaliacao">icone</div>
+                <p>R$69,90</p>
                 <button class="comprar" type="submit">COMPRAR</button>
             </div>
+            </section>
+        </main>
 
-            <div id="produtos">
-            <div id="produto">
-                <img src="./img/meia-ballet.jpg" alt="Meia rosa de balé">
-                <h3>Meia</h3>
-                <p>R$59,90</p>
-                <div class="avaliacao">icone</div>
-                <button class="comprar" type="submit">COMPRAR</button>
-            </div>
-
-            <div id="produtos">
-            <div id="produto">
-                <img src="./img/salto1_produtos.jpg" alt="Salto de Pole Dance">
-                <h3>Salto - Pole Dance</h3>
+        <main>
+            <section class="pagina-produtos">
+            <div class="produtos">
+            <div class="produto">
+                <img src="./img/conjunto.jpg" alt="conjunto de roupa">
+                <h3>Conjunto - Treino</h3>
                 <p>R$169,90</p>
-                <div class="avaliacao">icone</div>
                 <button class="comprar" type="submit">COMPRAR</button>
             </div>
 
-            <div id="produtos">
-            <div id="produto">
-                <img src="./img/salto1_produtos.jpg" alt="Salto de Pole Dance">
-                <h3>Salto - Pole Dance</h3>
-                <p>R$169,90</p>
-                <div class="avaliacao">icone</div>
+            <div class="produtos">
+            <div class="produto">
+                <img src="./img/saia-longa.jpg" alt="saia longa">
+                <h3>Saia Fairy</h3>
+                <p>R$69,90</p>
                 <button class="comprar" type="submit">COMPRAR</button>
             </div>
 
-            <div id="produtos">
-            <div id="produto">
-                <img src="./img/salto1_produtos.jpg" alt="Salto de Pole Dance">
-                <h3>Salto - Pole Dance</h3>
-                <p>R$169,90</p>
-                <div class="avaliacao">icone</div>
+            <div class="produtos">
+            <div class="produto">
+                <img src="./img/saia-ballet-rosa.jpg" alt="saia de ballet rosa">
+                <h3>Saia Ballet</h3>
+                <p>R$99,90</p>
                 <button class="comprar" type="submit">COMPRAR</button>
             </div>
-        </section>
-    </main>
+            </section>
+        </main>
 
-    <main>
-        <section class="pagina-produtos">
-
-            <div id="produtos">
-            <div id="produto">
-                <img src="./img/salto1_produtos.jpg" alt="Salto de Pole Dance">
-                <h3>Salto - Pole Dance</h3>
-                <p>R$169,90</p>
-                <div class="avaliacao">icone</div>
+        <main>
+            <section class="pagina-produtos">
+            <div class="produtos">
+            <div class="produto">
+                <img src="./img/salto-rosa.jpg" alt="salto de pole dance rosa">
+                <h3>Salto - Pole</h3>
+                <p>R$129,90</p>
                 <button class="comprar" type="submit">COMPRAR</button>
             </div>
 
-            <div id="produtos">
-            <div id="produto">
-                <img src="./img/salto1_produtos.jpg" alt="Salto de Pole Dance">
-                <h3>Salto - Pole Dance</h3>
-                <p>R$169,90</p>
-                <div class="avaliacao">icone</div>
+            <div class="produtos">
+            <div class="produto">
+                <img src="./img/meia-ballet.jpg" alt="meia de dança">
+                <h3>Meia Ballet</h3>
+                <p>R$39,90</p>
                 <button class="comprar" type="submit">COMPRAR</button>
             </div>
 
-            <div id="produtos">
-            <div id="produto">
-                <img src="./img/salto1_produtos.jpg" alt="Salto de Pole Dance">
-                <h3>Salto - Pole Dance</h3>
-                <p>R$169,90</p>
-                <div class="avaliacao">icone</div>
+            <div class="produtos">
+            <div class="produto">
+                <img src="./img/collant_produtos.jpg" alt="collant de dança">
+                <h3>Collant - Jazz</h3>
+                <p>R$69,90</p>
                 <button class="comprar" type="submit">COMPRAR</button>
             </div>
-
-            <div id="produtos">
-            <div id="produto">
-                <img src="./img/salto1_produtos.jpg" alt="Salto de Pole Dance">
-                <h3>Salto - Pole Dance</h3>
-                <p>R$169,90</p>
-                <div class="avaliacao">icone</div>
-                <button class="comprar" type="submit">COMPRAR</button>
-            </div>
-
-            <div id="produtos">
-            <div id="produto">
-                <img src="./img/salto1_produtos.jpg" alt="Salto de Pole Dance">
-                <h3>Salto - Pole Dance</h3>
-                <p>R$169,90</p>
-                <div class="avaliacao">icone</div>
-                <button class="comprar" type="submit">COMPRAR</button>
-            </div>
-        </section>
-    </main>
+            </section>
+        </main>
 
     <footer class="rodape">
         <div class="rodape-conteudo">
+
+            <div class="rodape-info">
+                <p>Rua Pastor Cícero Canuto de Lima, 71 <br> São Bernardo
+                    - Campinas, SP</p>
+                <p>3772-1840</p>
+                <div class="redes-sociais">
+                    <p>Redes Sociais</p>
+                    <div class="icones">
+                    <a href="https://web.whatsapp.com/"><i class="bi bi-whatsapp"></i></a>
+                    <a href="https://www.instagram.com/"><i class="bi bi-instagram"></i></a>
+                    <a href="https://x.com/"><i class="bi bi-twitter-x"></i></a>
+                    <a href="https://www.facebook.com/?locale=pt_BR"><i class="bi bi-facebook"></i></a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="rodape-menu">
+                <a href="index.html">Home</a>
+                <a href="produtos.html">Produtos</a>
+                <a href="sobre.html">Sobre</a>
+                <a href="contato.html">Contato</a>
+                <a href="login.html">Login</a>
+                <a href="cadastro.html">Cadastro</a>
+            </div>
         </div>
+         <div class="rodape-direitos">
+                <p>&copy SENAI Roberto Mange 2025 - Todos os direitos reservados.</p>
+            </div>
     </footer>
 </body>
 </html>
